@@ -1,15 +1,100 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarioBox - Tu Agencia de Envíos Confiable</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="font-sans">
+    <header class="bg-blue-600 text-white">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">DarioBox</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:underline">Sobre Nosotros</a></li>
+                    <li><a href="#services" class="hover:underline">Servicios</a></li>
+                    <li><a href="#contact" class="hover:underline">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <h1 class="text-3xl font-bold underline bg-blue-500 text-white p-4">
-    Hello world!
-  </h1>
+    <main>
+        <section class="bg-blue-100 py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-4">Bienvenido a DarioBox</h2>
+                <p class="text-xl mb-8">Tu socio confiable en envíos nacionales e internacionales</p>
+                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">Contáctanos</a>
+            </div>
+        </section>
 
+        <section id="about" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Sobre DarioBox</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-lg mb-4">
+                            DarioBox es una agencia de envíos comprometida con la excelencia en el servicio y la satisfacción del cliente. Con años de experiencia en la industria, nos hemos convertido en líderes en soluciones logísticas innovadoras y eficientes.
+                        </p>
+                        <p class="text-lg">
+                            Nuestra misión es simplificar el proceso de envío para nuestros clientes, ofreciendo servicios rápidos, seguros y económicos tanto a nivel nacional como internacional.
+                        </p>
+                    </div>
+                    <div class="relative h-96 bg-blue-100 md:h-96">
+                        <img src="./imagen dariobox.jpg " alt="DarioBox Warehouse" class="h-full w-full object-contain rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center">Nuestros Servicios</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="text-4xl mb-4">🚚</div>
+                        <h3 class="text-xl font-semibold mb-2">Envíos Nacionales</h3>
+                        <p>Entrega rápida y segura en todo el país</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="text-4xl mb-4">🌎</div>
+                        <h3 class="text-xl font-semibold mb-2">Envíos Internacionales</h3>
+                        <p>Soluciones globales para tus necesidades de envío</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="text-4xl mb-4">📦</div>
+                        <h3 class="text-xl font-semibold mb-2">Embalaje Especializado</h3>
+                        <p>Protección adicional para artículos frágiles o valiosos</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="text-4xl mb-4">🕒</div>
+                        <h3 class="text-xl font-semibold mb-2">Seguimiento en Tiempo Real</h3>
+                        <p>Monitorea tus envíos las 24 horas del día</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Contáctanos</h2>
+                <div class="max-w-lg mx-auto">
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Nombre" class="w-full px-4 py-2 border rounded-lg" required>
+                        <input type="email" placeholder="Correo Electrónico" class="w-full px-4 py-2 border rounded-lg" required>
+                        <textarea placeholder="Mensaje" rows="4" class="w-full px-4 py-2 border rounded-lg" required></textarea>
+                        <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 DarioBox. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
